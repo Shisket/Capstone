@@ -103,10 +103,10 @@ function iterate(id) {
     })
 
     // Grabbing the evaluate button
-    const evaluate = document.getElementsByClassName("evaluate");
+    const check = document.getElementsByClassName("check");
 
     // Evaluate method
-    evaluate[0].addEventListener("click", () => {
+    check[0].addEventListener("click", () => {
         if (selected == "true") {
             result[0].innerHTML = "True";
             result[0].style.color = "green";
