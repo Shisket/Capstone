@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@600&family=Patua+One&family=Quicksand&display=swap');
+
 
 body{
   padding: 0;
   margin: 0;
   height: 100vh;
-  background-color: #CCFFFF;
+  background-color: #DDFFFF;
   align-items: center;
   justify-content: center;
   font-family: 'Quicksand', sans-serif;
 }
 
 .nav-bar{
+  font-family: 'Patua One', cursive;
   height: 8vh;
+  color: white;
   width: 100vw;
-  font-size: 3vh;
-  background-color: #da9e64;
+  font-size: 150%;
+  background-color: #2B4570;
+  border-bottom: #1c2e4a 2px solid;
 }
 
 .nav-bar ul{
@@ -23,9 +27,25 @@ body{
   padding: 0;
 }
 
-.nav-bar li{
+#name{
+  font-family: 'Atma', cursive;
+  font-size: 4vh;
+  padding: 1vh;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
   float: right;
-  padding: 2vh 20px;
+  padding: 2.5vh 20px;
+}
+
+li a:hover{
+  background-color: #63A46C;
+}
+
+#nav{
+  border-left: #9593D9 2px solid;
 }
 
 .panel{
@@ -35,7 +55,7 @@ body{
     justify-content: center;
     align-items: center;
     border: black 1px solid;
-    border-radius: 2.5%;
+    border-radius: 50px;
     background-color: white;
 }
 
@@ -47,7 +67,6 @@ body{
   margin: 10px;
   padding: 5vh 2vw;
   width: 40vw;
-  /*height: 75vh;*/
   font-size: x-large;
   text-align: left;
   flex: 1;
