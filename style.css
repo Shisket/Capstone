@@ -135,34 +135,31 @@ button{
 }
 
 #next{
-    color: #2B4570;
-    padding: .25vh 1vw;
-    font-size: 10vh;
-    position: absolute;
-    bottom: 5vh;
-    right: 5vw;
+  color: #2B4570;
+  padding: .25vh 1vw;
+  font-size: 10vh;
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+}
+
+.pawprints{
+  font-size: 20vh;
+  position: fixed;
+  transform: rotate(55deg);
 }
 
 #paw1{
-  font-size: 20vh;
-  position: fixed;
   left: 1vw;
   bottom: 15vh;
-  transform: rotate(55deg);
 }
 
 #paw2{
-  font-size: 20vh;
-  position: fixed;
   left: 15vw;
   bottom: 1vh;
-  transform: rotate(55deg);
 }
 
 #paw3{
-  font-size: 20vh;
-  position: fixed;
   left: 20vw;
   bottom: 30vh;
-  transform: rotate(55deg);
 }
