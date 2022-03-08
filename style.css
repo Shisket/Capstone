@@ -16,9 +16,10 @@ body{
   height: 8vh;
   color: white;
   width: 100vw;
-  font-size: 150%;
+  font-size: 3vh;
   background-color: #2B4570;
   border-bottom: #1c2e4a 2px solid;
+  line-height: 8vh;
 }
 
 .nav-bar ul{
@@ -29,8 +30,8 @@ body{
 
 #name{
   font-family: 'Atma', cursive;
-  font-size: 4vh;
-  padding: 1vh;
+  font-size: 5vh;
+  padding: 0px 10px;
 }
 
 a{
@@ -47,7 +48,7 @@ li a:hover{
   border-left: #9593D9 2px solid;
   color: white;
   float: right;
-  padding: 1.22% 20px;
+  padding: 0px 20px;
 }
 
 .panel{
@@ -172,11 +173,11 @@ button{
 
   transform: rotate(-55deg);
   /* vertically center */
-  top:-90%;
+  top:-50%;
   /*transform:translateY(100%);*/
 
   /* move to right */
-  left:40%;
+  left:45%;
   margin-left:15px; /* and add a small left margin */
 
   /* basic styles */
