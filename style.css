@@ -144,22 +144,28 @@ button{
 }
 
 .pawprints{
-  font-size: 20vh;
   position: fixed;
   transform: rotate(55deg);
 }
 
+.pawprints:hover{
+  
+}
+
 #paw1{
+  font-size: 15vh;
   left: 1vw;
   bottom: 15vh;
 }
 
 #paw2{
+  font-size: 15vh;
   left: 15vw;
   bottom: 1vh;
 }
 
 #paw3{
+  font-size: 15vh;
   left: 20vw;
   bottom: 30vh;
 }
