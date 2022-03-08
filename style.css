@@ -148,10 +148,6 @@ button{
   transform: rotate(55deg);
 }
 
-.pawprints:hover{
-  
-}
-
 #paw1{
   font-size: 15vh;
   left: 1vw;
@@ -168,4 +164,33 @@ button{
   font-size: 15vh;
   left: 20vw;
   bottom: 30vh;
+}
+
+.pawprints:before {
+  content: attr(data-text); /* here's the magic */
+  position:absolute;
+
+  transform: rotate(-55deg);
+  /* vertically center */
+  top:-90%;
+  /*transform:translateY(100%);*/
+
+  /* move to right */
+  left:40%;
+  margin-left:15px; /* and add a small left margin */
+
+  /* basic styles */
+  /*width:3vw;*/
+  padding:10px;
+  border-radius:10px;
+  background:#000;
+  color: #fff;
+  text-align:center;
+
+  display:none; /* hide by default */
+}
+
+.pawprints:hover:before {
+  display:block;
+  font-size: 2vw;
 }
