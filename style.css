@@ -149,22 +149,43 @@ button{
   transform: rotate(55deg);
 }
 
+
+/*for line 1: (x1+c(.82), y1+c(.57))
+x1 = 2vw
+y1 = 15vh
+c = 30*number of paws from start*/
+/*for line 2: (x2+c(.82), y2+c(.57))
+x2 = 27vw
+y2 = 2vh
+c = 20*number of paws from start*/
 #paw1{
   font-size: 15vh;
-  left: 1vw;
+  left: 2vw;
   bottom: 15vh;
 }
 
 #paw2{
   font-size: 15vh;
-  left: 15vw;
-  bottom: 1vh;
+  left: 27vw;
+  bottom: 2vh;
 }
 
 #paw3{
   font-size: 15vh;
-  left: 20vw;
-  bottom: 30vh;
+  left: 26.6vw;
+  bottom: 32.1vh;
+}
+
+#paw4{
+  font-size: 15vh;
+  left: 51.6vw;
+  bottom: 19.1vh;
+}
+
+#paw5{
+  font-size: 15vh;
+  left: 51.2vw;
+  bottom: 49.2vh;
 }
 
 .pawprints:before {
