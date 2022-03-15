@@ -146,55 +146,59 @@ button{
 
 .pawprints{
   position: fixed;
-  transform: rotate(55deg);
+  display: flex;
+  transform: rotate(90deg) translate(-50%, -50%);
 }
 
-
-/*for line 1: (x1+c(.71), y1+c(.71))
-x1 = 2vw
-y1 = 15vh
-c = 30*number of paws from start*/
-/*for line 2: (x2+c(.71), y2+c(.71))
-x2 = 27vw
-y2 = 2vh
-c = 20*number of paws from start*/
 #paw1{
   font-size: 15vh;
-  left: 2vw;
+  left: 5vw;
   bottom: 15vh;
 }
 
 #paw2{
   font-size: 15vh;
-  left: 27vw;
-  bottom: 2vh;
+  left: 20vw;
+  bottom: 45vh;
 }
 
 #paw3{
   font-size: 15vh;
-  left: 23.3vw;
-  bottom: 36.3vh;
+  left: 35vw;
+  bottom: 15vh;
 }
 
 #paw4{
   font-size: 15vh;
-  left: 48.3vw;
-  bottom: 23.3vh;
+  left: 50vw;
+  bottom: 45vh;
 }
 
 #paw5{
   font-size: 15vh;
-  left: 44.6vw;
-  bottom: 57.6vh;
+  left: 65vw;
+  bottom: 15vh;
 }
+
+.pawdesigns{
+  position: absolute;
+  color: white;
+  font-size: 5vh !important;
+  transform: rotate(-90deg);
+}
+
+/*#design1{
+  font-size: 5vh;
+  left: 3.5vw;
+  bottom: 18.25vh;
+}*/
 
 .pawprints::before {
   content: attr(data-text);
   position:absolute;
 
-  transform: rotate(-55deg);
-  top:-8.5vh;
-  left:6.5vw;
+  transform: rotate(-90deg) translate(0%,-25%);
+  top:-7vw;
 
   padding:10px;
   border-radius:10px;
