@@ -43,14 +43,13 @@ function iterate(id) {
 
     // Getting the result display section
     var result = document.getElementsByClassName("result");
-    result[0] = "";
+    result[0].innerText = "";
 
     // Getting the question
     var question = document.getElementById("question");
 
     // Setting the question text
     question.innerText = Questions[id].q;
-    console.log(Questions[id]);
 
     // Getting the title
     const title = document.getElementById("section-title");
@@ -69,6 +68,11 @@ function iterate(id) {
     const op2 = document.getElementById('op2');
     const op3 = document.getElementById('op3');
     const op4 = document.getElementById('op4');
+
+    op1.style.backgroundColor = "lightskyblue";
+    op2.style.backgroundColor = "lightskyblue";
+    op3.style.backgroundColor = "lightskyblue";
+    op4.style.backgroundColor = "lightskyblue";
 
 
     // Providing option text
@@ -153,6 +157,6 @@ next.addEventListener("click", () => {
         console.log(id);
     }
     else {
-      location.replace("index.html")
+      location.replace("index.html");
     }
 })

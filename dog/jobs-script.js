@@ -6,8 +6,8 @@ const Questions = [{
       { text: "Example", isCorrect: false },
       { text: "Example", isCorrect: false }
   ],
-  blurb: "Example",
-  title: "Example"
+  blurb: "Just like in a human hospital or doctors’ office, in a veterinary clinic there are many different people, not just doctors, working together. The Veterinarian is the doctor. They have gone to veterinary school and have a DVM degree. <b>Veterinarians</b> are allowed to diagnose, prognose, prescribe, and perform surgery. The <b>Registered Veterinary Technician</b> is like the nurse. They have gone to a 2-4 year program and taken a test. They are allowed to do most things if the veterinarian tells them to. The <b>Veterinary Assistant</b> is someone that helps the Vets and Vet Techs. They don’t need to have a degree, license, or certification, though they might. The <b>Veterinary Receptionist</b> checks people in, makes appointments, and answers phone calls.",
+  title: "Different Jobs"
 
 },
 {
@@ -18,12 +18,36 @@ const Questions = [{
       { text: "Example", isCorrect: false },
       { text: "Example", isCorrect: false }
   ],
-  blurb: "Example",
-  title: "Example"
+  blurb: "There are also a lot of different fields that veterinarians can work in. Most of these involve working with different kinds of animals, but there are some that don’t. Veterinarians can work in Small Animal Practices, Large Animal Practices, Exotic Animal Practices, Veterinary Schools, Research Labs, and Wild Animal Practices.",
+  title: "Different Fields"
 
 },
 {
   id: 2,
+  q: "Example",
+  a: [{ text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false }
+  ],
+  blurb: "Small Animal Practices, or Companion Animal Practices, are the vet clinics that most people think of first. These are the clinics where they care for small animals, which includes dogs, cats, rabbits, and rodents. Around half of all veterinarians in the USA work at Small Animal Practices.",
+  title: "Small Animal Practice"
+
+},
+{
+  id: 3,
+  q: "Example",
+  a: [{ text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false }
+  ],
+  blurb: "Large Animal Practices are clinics that focus on farm animals, like horses, cows, sheep, goats, and pigs. There are more Large Animal vets in areas with more farming and ranching, because there are more animals there for them to work with. Some vets choose to work specifically with horses or with food animals",
+  title: "Large Animal Practices"
+
+},
+{
+  id: 4,
   q: "Example",
   a: [{ text: "Example", isCorrect: false },
       { text: "Example", isCorrect: false },
@@ -62,7 +86,7 @@ function iterate(id) {
     const blurb = document.getElementById("blurb");
 
     // Setting the blurb text
-    blurb.innerText = Questions[id].blurb;
+    blurb.innerHTML = Questions[id].blurb;
 
 
     // Getting the options
@@ -70,6 +94,11 @@ function iterate(id) {
     const op2 = document.getElementById('op2');
     const op3 = document.getElementById('op3');
     const op4 = document.getElementById('op4');
+
+    op1.style.backgroundColor = "lightskyblue";
+    op2.style.backgroundColor = "lightskyblue";
+    op3.style.backgroundColor = "lightskyblue";
+    op4.style.backgroundColor = "lightskyblue";
 
 
     // Providing option text
@@ -128,10 +157,10 @@ function iterate(id) {
     // Evaluate method
     check[0].addEventListener("click", () => {
         if (selected == "true") {
-            result[0].innerHTML = "True";
+            result[0].innerHTML = "Great Job!";
             result[0].style.color = "green";
         } else {
-            result[0].innerHTML = "False";
+            result[0].innerHTML = "Nice Try";
             result[0].style.color = "red";
         }
     })

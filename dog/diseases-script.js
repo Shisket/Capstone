@@ -90,6 +90,11 @@ function iterate(id) {
     const op3 = document.getElementById('op3');
     const op4 = document.getElementById('op4');
 
+    op1.style.backgroundColor = "lightskyblue";
+    op2.style.backgroundColor = "lightskyblue";
+    op3.style.backgroundColor = "lightskyblue";
+    op4.style.backgroundColor = "lightskyblue";
+
 
     // Providing option text
     op1.innerText = Questions[id].a[0].text;
