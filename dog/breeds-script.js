@@ -46,7 +46,7 @@ function iterate(id) {
     result[0].innerText = "";
 
     // Getting the question
-    var question = document.getElementById("question");
+    const question = document.getElementById("question");
 
     // Setting the question text
     question.innerText = Questions[id].q;
