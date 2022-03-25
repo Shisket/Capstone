@@ -5,7 +5,9 @@ const Questions = [{
             { text: "Cat", isCorrect: false },
             { text: "Snake", isCorrect: true },
             { text: "Human", isCorrect: false }
-        ]
+        ],
+        blurb: "Rabies is a virus that is carried in the saliva of infected animals. Once an animal is bitten, it takes anywhere from three to twelve weeks for the virus to make its way through the nervous system into the brain and spinal cord. This is called the incubation period. Rabies can be prevented by a series of vaccines or can be treated during the incubation period by a series of shots. Once symptoms appear, the infected animal will likely die within a week. Symptoms include weakness, excessive drool, confusion, fear of water, aggression, and paralysis. Only mammals can get rabies.",
+        title: "Rabies"
 
     },
     {
@@ -15,7 +17,9 @@ const Questions = [{
             { text: "The brain", isCorrect: false },
             { text: "The lungs", isCorrect: false },
             { text: "The intestines", isCorrect: true }
-        ]
+        ],
+        blurb: "Parvovirus is a virus that is carried in the feces of infected animals. There are two types, one that attacks the gastrointestinal system and one that attacks the cardiovascular system. In the gastrointestinal type, the infected animal stops being able to digest food, so it doesn’t get energy or nutrients from the food. In the cardiovascular type, the infection hurts the heart, making it too weak to do its job well. The incubation period is three to seven days, and after symptoms appear, they can kill the animal within three days. Symptoms include high fever, lethargy, weakness, loss of appetite, vomiting, and dehydration. Parvovirus can be prevented by a series of vaccines.",
+        title: "Parvovirus"
 
     },
     {
@@ -25,7 +29,31 @@ const Questions = [{
             { text: "Tomorrow", isCorrect: false },
             { text: "In a week", isCorrect: true },
             { text: "In a month", isCorrect: false }
-        ]
+        ],
+        blurb: "Kennel cough is similar to a common cold in humans. It is a term used for a group of different viruses and bacteria that cause similar symptoms. The most common pathogens include Bordetella Bronchiseptica and Canine Parainfluenza. The incubation period is three to ten days. The most obvious symptom of kennel cough is a cough that sounds like a honk. Other symptoms include gagging and having a fever.  Kennel cough is often spread in places where many dogs are in close contact, such as a kennel, shelter, or dog park.",
+        title: "Kennel Cough"
+    },
+    {
+        id: 3,
+        q: "You are walking with your family in the middle of the day and see a raccoon across the street. It is wobbling around and snarling even though there is nothing around it. What is wrong with it?",
+        a: [{ text: "It has rabies", isCorrect: true },
+            { text: "It is just angry", isCorrect: false },
+            { text: "It has kennel cough", isCorrect: false },
+            { text: "It has parvovirus", isCorrect: false }
+        ],
+        blurb: "You are doing great!",
+        title: "Some more questions!"
+    },
+    {
+        id: 4,
+        q: "Which of the following can be prevented by vaccination?",
+        a: [{ text: "Kennel Cough", isCorrect: false },
+            { text: "Rabies", isCorrect: false },
+            { text: "Parvovirus", isCorrect: false },
+            { text: "All of the above", isCorrect: true }
+        ],
+        blurb: "You are doing great!",
+        title: "Some more questions!"
     }
 ]
 // Set start
@@ -41,9 +69,20 @@ function iterate(id) {
     // Getting the question
     const question = document.getElementById("question");
 
-
     // Setting the question text
     question.innerText = Questions[id].q;
+
+    // Getting the title
+    const title = document.getElementById("section-title");
+
+    // Setting the title text
+    title.innerText = Questions[id].title;
+
+    // Getting the blurb
+    const blurb = document.getElementById("blurb");
+
+    // Setting the blurb text
+    blurb.innerText = Questions[id].blurb;
 
     // Getting the options
     const op1 = document.getElementById('op1');
@@ -122,15 +161,17 @@ if (start) {
 }
 
 // Next button and method
-const next = document.getElementsByClassName('next')[0];
+const next = document.getElementById('next');
 var id = 0;
 
 next.addEventListener("click", () => {
     start = false;
-    if (id < 2) {
+    if (id < 4) {
         id++;
         iterate(id);
         console.log(id);
     }
-
+    else {
+      location.replace("index.html")
+    }
 })

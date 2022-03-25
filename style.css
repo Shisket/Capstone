@@ -28,6 +28,23 @@ body{
   padding: 0;
 }
 
+.homebody {
+  height: 86vh;
+  border-bottom: #75482F 6vh solid;
+}
+
+.menu {
+  font-size: 7vh;
+  position: absolute;
+  bottom: 5.5vh;
+  text-align: center;
+  margin-left: 40%;
+}
+
+.menuicon {
+  font-size: 30vh;
+}
+
 #name{
   font-family: 'Atma', cursive;
   font-size: 5vh;
@@ -77,6 +94,7 @@ li a:hover{
   color: #4b8153;
   background-color: transparent !IMPORTANT;
   border-bottom: none !IMPORTANT;
+  text-decoration: underline;
 }
 
 .info ul{
@@ -143,7 +161,7 @@ button{
     background-color: lightgoldenrodyellow;
 }
 
-#check{
+.check{
     margin: 3vh;
     background-color: #50DBB4;
     font-size: larger;
@@ -164,36 +182,37 @@ button{
 .pawprints{
   position: fixed;
   display: flex;
+  transform-origin: center;
   transform: rotate(90deg) translate(-50%, -50%);
 }
 
 #paw1{
   font-size: 15vh;
-  left: 5vw;
+  left: 10vw;
   bottom: 15vh;
 }
 
 #paw2{
   font-size: 15vh;
-  left: 20vw;
+  left: 25vw;
   bottom: 45vh;
 }
 
 #paw3{
   font-size: 15vh;
-  left: 35vw;
+  left: 40vw;
   bottom: 15vh;
 }
 
 #paw4{
   font-size: 15vh;
-  left: 50vw;
+  left: 55vw;
   bottom: 45vh;
 }
 
 #paw5{
   font-size: 15vh;
-  left: 65vw;
+  left: 70vw;
   bottom: 15vh;
 }
 
@@ -214,8 +233,10 @@ button{
   content: attr(data-text);
   position:absolute;
 
-  transform: rotate(-90deg) translateY(-50%);
-  top:-7vw;
+  transform: rotate(-90deg);
+  transform-origin: center left;
+  top: -2vw;
+  left: 7.5vh;
 
   padding:10px;
   border-radius:10px;

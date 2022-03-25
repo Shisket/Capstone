@@ -8,7 +8,6 @@
 	<title>Capstone</title>
 
 	<link rel="stylesheet" href="../style.css"/>
-	<script src = "diseases-script.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="https://kit.fontawesome.com/7c5f8d9026.js" crossorigin="anonymous"></script>
 </head>
@@ -26,8 +25,8 @@
 		<div class = "inner-panel">
 		  <div class = "words">
 				<h1>Dog Diseases</h1>
-				<h2>[disease]</h2>
-			  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<h2 id = "section-title">[disease]</h2>
+			  <p id = "blurb"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 	  	</div>
 			<div class = "question-side">
 	    	<div class = "question-container" id = "question">
@@ -39,11 +38,11 @@
 					<button class = "option" id = "op3">option3</button>
 					<button class = "option" id = "op4">option4</button>
 				</div>
-				<button id = "check">Check</button>
-				<div class = "result">
-				</div>
+				<button class = "check">Check</button>
+				<div class = "result"></div>
 				<i class="material-icons" id = "next">forward</i>
 			</div>
 		</div>
+		<script src = "diseases-script.js"></script>
 </body>
 </html>

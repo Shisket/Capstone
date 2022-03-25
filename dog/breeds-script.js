@@ -1,32 +1,39 @@
 const Questions = [{
-        id: 0,
-        q: "Which of the following animals can’t get rabies?",
-        a: [{ text: "Dog", isCorrect: false },
-            { text: "Cat", isCorrect: false },
-            { text: "Snake", isCorrect: true },
-            { text: "Human", isCorrect: false }
-        ]
+  id: 0,
+  q: "Example",
+  a: [{ text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false }
+  ],
+  blurb: "Example",
+  title: "Example"
 
-    },
-    {
-        id: 1,
-        q: "Which of the following organs can parvovirus directly attack?",
-        a: [{ text: "The skin", isCorrect: false, isSelected: false },
-            { text: "The brain", isCorrect: false },
-            { text: "The lungs", isCorrect: false },
-            { text: "The intestines", isCorrect: true }
-        ]
+},
+{
+  id: 1,
+  q: "Example",
+  a: [{ text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false }
+  ],
+  blurb: "Example",
+  title: "Example"
 
-    },
-    {
-        id: 2,
-        q: "A dog was near another dog with kennel cough today. When will symptoms probably start?",
-        a: [{ text: "Today", isCorrect: false },
-            { text: "Tomorrow", isCorrect: false },
-            { text: "In a week", isCorrect: true },
-            { text: "In a month", isCorrect: false }
-        ]
-    }
+},
+{
+  id: 2,
+  q: "Example",
+  a: [{ text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false },
+      { text: "Example", isCorrect: false }
+  ],
+  blurb: "Example",
+  title: "Example"
+
+}
 ]
 // Set start
 var start = true;
@@ -36,14 +43,26 @@ function iterate(id) {
 
     // Getting the result display section
     var result = document.getElementsByClassName("result");
-    result[0].innerText = "";
+    result[0] = "";
 
     // Getting the question
-    const question = document.getElementById("question");
-
+    var question = document.getElementById("question");
 
     // Setting the question text
     question.innerText = Questions[id].q;
+    console.log(Questions[id]);
+
+    // Getting the title
+    const title = document.getElementById("section-title");
+
+    // Setting the title text
+    title.innerText = Questions[id].title;
+
+    // Getting the blurb
+    const blurb = document.getElementById("blurb");
+
+    // Setting the blurb text
+    blurb.innerText = Questions[id].blurb;
 
     // Getting the options
     const op1 = document.getElementById('op1');
@@ -103,7 +122,8 @@ function iterate(id) {
     })
 
     // Grabbing the evaluate button
-    const check = document.getElementsByClassName("check");
+    var check = document.getElementsByClassName("check");
+    console.log(check)
 
     // Evaluate method
     check[0].addEventListener("click", () => {
@@ -122,7 +142,7 @@ if (start) {
 }
 
 // Next button and method
-const next = document.getElementsByClassName('next')[0];
+const next = document.getElementById('next');
 var id = 0;
 
 next.addEventListener("click", () => {
@@ -132,5 +152,7 @@ next.addEventListener("click", () => {
         iterate(id);
         console.log(id);
     }
-
+    else {
+      location.replace("index.html")
+    }
 })
