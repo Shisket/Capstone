@@ -28,17 +28,25 @@ body{
   padding: 0;
 }
 
-.homebody {
+.homepage {
   height: 86vh;
+  width: 100vw;
+  /*padding: 0 1vw;*/
   border-bottom: #75482F 6vh solid;
+}
+
+.homebody {
+  height: 79vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .menu {
   font-size: 7vh;
-  position: absolute;
-  bottom: 5.5vh;
+  /*position: absolute;*/
+  /*bottom: 5.5vh;*/
   text-align: center;
-  margin-left: 40%;
 }
 
 .menuicon {

@@ -152,10 +152,10 @@ function iterate(id) {
     // Evaluate method
     check[0].addEventListener("click", () => {
         if (selected == "true") {
-            result[0].innerHTML = "True";
+            result[0].innerHTML = "Great Job!";
             result[0].style.color = "green";
         } else {
-            result[0].innerHTML = "False";
+            result[0].innerHTML = "Try Again";
             result[0].style.color = "red";
         }
     })
