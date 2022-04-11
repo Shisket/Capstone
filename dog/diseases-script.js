@@ -6,7 +6,7 @@ const Questions = [{
             { text: "Snake", isCorrect: true },
             { text: "Human", isCorrect: false }
         ],
-        blurb: "Rabies is a virus that is carried in the saliva of infected animals. Once an animal is bitten, it takes anywhere from three to twelve weeks for the virus to make its way through the nervous system into the brain and spinal cord. This is called the incubation period. Rabies can be prevented by a series of vaccines or can be treated during the incubation period by a series of shots. Once symptoms appear, the infected animal will likely die within a week. Symptoms include weakness, excessive drool, confusion, fear of water, aggression, and paralysis. Only mammals can get rabies.",
+        blurb: "Rabies is a virus that is carried in the saliva of infected animals. Once an animal is bitten, it takes anywhere from three to twelve weeks for the virus to make its way through the nervous system into the brain and spinal cord. This is called the <dfn title='the period of time between exposure and symptoms'>incubation period</dfn>. Rabies can be prevented by a series of vaccines or can be treated during the incubation period by a series of shots. Once symptoms appear, the infected animal will likely die within a week. Symptoms include weakness, excessive drool, confusion, fear of water, aggression, and paralysis. Only mammals can get rabies.",
         title: "Rabies"
 
     },
@@ -82,7 +82,7 @@ function iterate(id) {
     const blurb = document.getElementById("blurb");
 
     // Setting the blurb text
-    blurb.innerText = Questions[id].blurb;
+    blurb.innerHTML = Questions[id].blurb;
 
     // Getting the options
     const op1 = document.getElementById('op1');

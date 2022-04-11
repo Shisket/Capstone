@@ -31,8 +31,7 @@ body{
 .homepage {
   height: 86vh;
   width: 100vw;
-  /*padding: 0 1vw;*/
-  border-bottom: #75482F 6vh solid;
+  border-bottom: #75482F 5.75vh solid;
 }
 
 .homebody {
@@ -44,8 +43,6 @@ body{
 
 .menu {
   font-size: 7vh;
-  /*position: absolute;*/
-  /*bottom: 5.5vh;*/
   text-align: center;
 }
 
@@ -89,6 +86,7 @@ li a:hover{
 
 .inner-panel{
   display: flex;
+  height: 86vh;
 }
 
 .info{
@@ -110,12 +108,17 @@ li a:hover{
 }
 
 .words{
-  margin: 10px;
+  margin: 1vh;
   padding: 1vh 2vw 5vh 2vw;
   width: 40vw;
   font-size: x-large;
   text-align: left;
   flex: 1;
+}
+
+p#blurb{
+  overflow: auto;
+  height: 58vh;
 }
 
 h1{
@@ -129,7 +132,7 @@ h1{
 }
 
 .question-container{
-    margin: 10px;
+    margin: 1vh;
     padding: 5vh 2vw;
     font-size: x-large;
     text-align: center;
@@ -230,12 +233,6 @@ button{
   font-size: 4vh !important;
   transform: rotate(-90deg) translate(-4.5vw, -9.5vh);
 }
-
-/*#design1{
-  font-size: 5vh;
-  left: 3.5vw;
-  bottom: 18.25vh;
-}*/
 
 .pawprints::before {
   content: attr(data-text);
