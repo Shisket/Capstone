@@ -6,7 +6,7 @@ const Questions = [{
       { text: "Veterinary Assistant", isCorrect: false },
       { text: "Veterinary Receptionist", isCorrect: false }
   ],
-  blurb: "Just like in a human hospital or doctors’ office, in a veterinary clinic there are many different people, not just doctors, working together. The Veterinarian is the doctor. They have gone to veterinary school and have a DVM degree. <b>Veterinarians</b> are allowed to diagnose, prognose, prescribe, and perform surgery. The <b>Registered Veterinary Technician</b> is like the nurse. They have gone to a 2-4 year program and taken a test. They are allowed to do most things if the veterinarian tells them to. The <b>Veterinary Assistant</b> is someone that helps the Vets and Vet Techs. They don’t need to have a degree, license, or certification, though they might. The <b>Veterinary Receptionist</b> checks people in, makes appointments, and answers phone calls.",
+  blurb: "Just like in a human hospital or doctors’ office, in a veterinary clinic there are many different people, not just doctors, working together. The Veterinarian is the doctor. They have gone to veterinary school and have a <span class='definition defined' data-text='Doctor of Veterinary Medicine'>DVM</span> degree. <b>Veterinarians</b> are allowed to <span class='definition defined' data-text='identify a disease or illness'>diagnose</span>, <span class='definition defined' data-text='predict what the disease is going to do and if the animal will recover'>prognose</span>, <span class='definition defined' data-text='order medicine or treatment for the patient'>prescribe</span>, and <span class='definition defined' data-text='operate on a patient'>perform surgery</span>. The <b>Registered Veterinary Technician</b> is like the nurse. They have gone to a 2-4 year program and taken a test. They are allowed to do most things if the veterinarian tells them to. The <b>Veterinary Assistant</b> is someone that helps the Vets and Vet Techs. They don’t need to have a degree, license, or certification, though they might. The <b>Veterinary Receptionist</b> checks people in, makes appointments, and answers phone calls.",
   title: "Different Jobs"
 
 },
@@ -42,7 +42,7 @@ const Questions = [{
       { text: "A donkey", isCorrect: true },
       { text: "A jaguar", isCorrect: false }
   ],
-  blurb: "Large Animal Practices are clinics that focus on farm animals, like horses, cows, sheep, goats, and pigs. There are more Large Animal vets in areas with more farming and ranching, because there are more animals there for them to work with. Some vets choose to work specifically with horses or with food animals. Lots of Large Animal veterinarians are mobile, meaning they travel to the patients and help them at home.<br><br>There are also Mixed Animal Practices, which see both small and large animals.",
+  blurb: "Large Animal Practices are clinics that focus on farm animals, like horses, cows, sheep, goats, and pigs. There are more Large Animal vets in areas with more farming and ranching, because there are more animals there for them to work with. Some vets choose to work specifically with horses or with <span class='definition defined' data-text='the animals that people tend to eat or get food from (cows, pigs, sheep, and goats)'>food animals</span>. Lots of Large Animal veterinarians are mobile, meaning they travel to the patients and help them at home.<br><br>There are also Mixed Animal Practices, which see both small and large animals.",
   title: "Large Animal Practices"
 
 },
@@ -54,7 +54,7 @@ const Questions = [{
       { text: "Mixed Animal", isCorrect: false },
       { text: "Small Animal", isCorrect: false }
   ],
-  blurb: "Exotic Animal Practices focus on pets that aren’t included in Small and Large Animal Practices, like birds, reptiles, and even hedgehogs.<br><br>Wild Animal Practices focus on wild animals. This includes basically anything that wasn’t part of the other types of practices. Places like zoos tend to have Wild Animal veterinary staff in order to take care of the animals. If you find an injured squirrel or raccoon, you would also bring it to a Wild Animal Practice.",
+  blurb: "Exotic Animal Practices focus on pets that aren’t included in Small and Large Animal Practices, like birds, <span class='definition defined' data-text='air-breathing, cold-blooded, scaly animals like lizards, turtles, and snakes'>reptiles</span>, and even hedgehogs.<br><br>Wild Animal Practices focus on wild animals. This includes basically anything that wasn’t part of the other types of practices. Places like zoos tend to have Wild Animal veterinary staff in order to take care of the animals. If you find an injured squirrel or raccoon, you would also bring it to a Wild Animal Practice.",
   title: "Exotic and Wild Animal Practices"
 
 },
