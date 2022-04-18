@@ -79,20 +79,20 @@ function iterate(id) {
 
     // Getting the result display section
     var result = document.getElementsByClassName("result");
-    result[0].innerText = "";
+    result[0].innerHTML = "";
 
     // Getting the question
     const question = document.getElementById("question");
 
 
     // Setting the question text
-    question.innerText = Questions[id].q;
+    question.innerHTML = Questions[id].q;
 
     // Getting the title
     const title = document.getElementById("section-title");
 
     // Setting the title text
-    title.innerText = Questions[id].title;
+    title.innerHTML = Questions[id].title;
 
     // Getting the blurb
     const blurb = document.getElementById("blurb");
@@ -114,10 +114,10 @@ function iterate(id) {
 
 
     // Providing option text
-    op1.innerText = Questions[id].a[0].text;
-    op2.innerText = Questions[id].a[1].text;
-    op3.innerText = Questions[id].a[2].text;
-    op4.innerText = Questions[id].a[3].text;
+    op1.innerHTML = Questions[id].a[0].text;
+    op2.innerHTML = Questions[id].a[1].text;
+    op3.innerHTML = Questions[id].a[2].text;
+    op4.innerHTML = Questions[id].a[3].text;
 
     // Providing the true or false value to the options
     op1.value = Questions[id].a[0].isCorrect;
@@ -172,7 +172,7 @@ function iterate(id) {
             result[0].innerHTML = "Great Job!";
             result[0].style.color = "green";
         } else {
-            result[0].innerHTML = "Nice Try";
+            result[0].innerHTML = "Try Again";
             result[0].style.color = "red";
         }
     })

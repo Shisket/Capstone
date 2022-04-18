@@ -168,10 +168,6 @@ button{
     margin: 1%;
 }
 
-.option:hover{
-    background-color: lightgoldenrodyellow;
-}
-
 .check{
     margin: 3vh;
     background-color: #50DBB4;
@@ -293,7 +289,7 @@ button{
   background: #B0D4B4;
   border: black 5px double;
   border-radius: 50px;
-  height: 30vh;
+  height: 28vh;
   width: 58vw;
   text-align: center;
   padding: 3vh;
@@ -306,7 +302,7 @@ button{
   border: black 5px double;
   border-radius: 50px;
   margin: 2vw 2vw 2vw 1vw;
-  height: 30vh;
+  height: 28vh;
   width: 38vw;
   text-align: center;
   padding: 3vh;
@@ -319,7 +315,7 @@ button{
   border: black 5px double;
   border-radius: 50px;
   margin: 0vh 2vw 2vw 2vw;
-  height: 37vh;
+  height: 39vh;
   width: justify;
   text-align: center;
   padding: 3vh 5vw;

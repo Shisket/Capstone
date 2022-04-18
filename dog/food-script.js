@@ -1,37 +1,37 @@
 const Questions = [{
   id: 0,
-  q: "Example",
-  a: [{ text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false }
+  q: "How often should you give your pet snacks that are made for humans and not dogs?",
+  a: [{ text: "All the time, as their meals", isCorrect: false },
+      { text: "Often, give them your leftovers", isCorrect: false },
+      { text: "Occasionally, as treats", isCorrect: true },
+      { text: "Never ever ever", isCorrect: false }
   ],
-  blurb: "Example",
-  title: "Example"
+  blurb: "Most dogs eat kibble or canned food as their main meals. Some dogs get homemade food from their owners. These are great to supply important energy, nutrients, vitamins, and minerals. But, like humans, dogs sometimes get snacks that aren’t like their normal food. These snacks are great for training, distracting, or rewarding them, but shouldn’t be given as a full meal. Also, it is important to remember that dogs can’t eat some things that humans can.",
+  title: "Food"
 
 },
 {
   id: 1,
-  q: "Example",
-  a: [{ text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false }
+  q: "Which part of a chicken is bad for dogs?",
+  a: [{ text: "Light meat", isCorrect: false },
+      { text: "Dark meat", isCorrect: false },
+      { text: "Wings", isCorrect: false },
+      { text: "Bones", isCorrect: true }
   ],
-  blurb: "Example",
-  title: "Example"
+  blurb: "Here are some human foods that dogs can eat. Don’t forget that too much of any human food is bad for dogs. <ul><li>Peanut Butter</li><li>Cheese</li><li>Cashews</li><li>Blueberries and Blackberries</li><li>Cooked Meat, like chicken, pork, and beef</li><li>Cooked Eggs</li><li>Unseasoned Popcorn</li><li>Bananas</li><li>Yogurt</li><li>Carrots</li></ul>",
+  title: "Good Snacks"
 
 },
 {
   id: 2,
-  q: "Example",
-  a: [{ text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false },
-      { text: "Example", isCorrect: false }
+  q: "Which of these could you give your dog as a treat?",
+  a: [{ text: "Chocolate", isCorrect: false },
+      { text: "Carrots", isCorrect: true },
+      { text: "Walnuts", isCorrect: false },
+      { text: "Avocado", isCorrect: false }
   ],
-  blurb: "Example",
-  title: "Example"
+  blurb: "There are some foods that dogs can’t eat. Here are some of the most common and dangerous ones <ul><li>Chocolate - the Caffeine and Theobromine hurt the kidneys</li><li>Onions and Garlic - they hurt the <span class='definition defined' data-text='the group of organs that digest food including the mouth, stomach, intestines, and liver'>gastrointestinal system</span>  and red blood cells</li><li>Grapes and Raisins - they hurt the kidneys and liver</li><li>Macadamia Nuts - they hurt the <span class='definition defined' data-text='the group of organs that controls the signals sent around your body. This includes your brain, spinal cord, and nerves'>nervous system</span></li><li>Pecans and Walnuts - the Juglone and mold hurt the <span class='definition defined' data-text='the group of organs that digest food including the mouth, stomach, intestines, and liver'>gastrointestinal system</span> </li><li>Alcohol - it affects animals much more than humans</li><li>Avocado - the Persin hurts the <span class='definition defined' data-text='the group of organs that digest food including the mouth, stomach, intestines, and liver'>gastrointestinal system</span></li></ul>",
+  title: "Very Bad Snacks"
 
 }
 ]
@@ -43,26 +43,26 @@ function iterate(id) {
 
     // Getting the result display section
     var result = document.getElementsByClassName("result");
-    result[0].innerText = "";
+    result[0].innerHTML = "";
 
     // Getting the question
     const question = document.getElementById("question");
 
 
     // Setting the question text
-    question.innerText = Questions[id].q;
+    question.innerHTML = Questions[id].q;
 
     // Getting the title
     const title = document.getElementById("section-title");
 
     // Setting the title text
-    title.innerText = Questions[id].title;
+    title.innerHTML = Questions[id].title;
 
     // Getting the blurb
     const blurb = document.getElementById("blurb");
 
     // Setting the blurb text
-    blurb.innerText = Questions[id].blurb;
+    blurb.innerHTML = Questions[id].blurb;
 
 
     // Getting the options
@@ -78,10 +78,10 @@ function iterate(id) {
 
 
     // Providing option text
-    op1.innerText = Questions[id].a[0].text;
-    op2.innerText = Questions[id].a[1].text;
-    op3.innerText = Questions[id].a[2].text;
-    op4.innerText = Questions[id].a[3].text;
+    op1.innerHTML = Questions[id].a[0].text;
+    op2.innerHTML = Questions[id].a[1].text;
+    op3.innerHTML = Questions[id].a[2].text;
+    op4.innerHTML = Questions[id].a[3].text;
 
     // Providing the true or false value to the options
     op1.value = Questions[id].a[0].isCorrect;
@@ -133,10 +133,10 @@ function iterate(id) {
     // Evaluate method
     check[0].addEventListener("click", () => {
         if (selected == "true") {
-            result[0].innerHTML = "True";
+            result[0].innerHTML = "Great Job!";
             result[0].style.color = "green";
         } else {
-            result[0].innerHTML = "False";
+            result[0].innerHTML = "Try Again";
             result[0].style.color = "red";
         }
     })
