@@ -322,3 +322,8 @@ button{
   color: black;
   font-size: large;
 }
+
+::selection {
+  color: white;
+  background: #2B4570;
+}
